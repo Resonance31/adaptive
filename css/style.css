@@ -1,0 +1,30 @@
+div.image_gallery {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    max-width: 90%; /* контейнер не превышает 90% ширины экрана */
+    min-width: 500px;
+}
+img {
+    float: left;
+    max-width: 48%;
+    height: auto;
+    padding: 1%; /* небольшие оступы для изображений */
+}
+
+
+
+
+
+@media screen and (min-width: 360px) and (max-width: 760px) { 
+    .class {
+		margin-top: 100px;
+        background-color: red;
+    }
+	div.image_gallery {
+	margin: 0 auto;
+	margin-left: 100px;
+    width: 1000px;
+    text-align: center;
+}
+}
