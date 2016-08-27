@@ -1,40 +1,56 @@
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
+	color: #0000CD;
 }
 div.image_gallery {
-    margin: 0 auto;
-    width: 1000px;
+    margin: 30px 150px;
+    width: 1200px;
     text-align: center;
     max-width: 90%; /* контейнер не превышает 90% ширины экрана */
     min-width: 500px;
 }
 img {
     float: left;
-    max-width: 31%;
-    height: auto;
-    padding: 1%; /* небольшие оступы для изображений */
+    max-width: 40%;
+    height: 250px;
+    padding: 0.5%; /* небольшие оступы для изображений */
+}
+
+body {
+    font-family: 'Lobster', cursive;
+	background-image: url("http://siryx.ru/_ph/27/116884545.jpg");	
+	background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) { /* разрешение планшета */
     h1 {
-        font-size: 20px;
+        font-size: 26px;
+		color: white;
+		background-color: blue;
     }
     div.image_gallery {
         min-width: 320px;
+		margin: 0 auto;
     }
     img {
         max-width: 48%; /* 2 изображения в ряд */
         height: auto;
         padding: 1%; /* небольшие оступы для изображений */
     }
+	
+	body {
+	font-family: 'Lobster', cursive;
+	background-image: url("http://siryx.ru/_ph/27/116884545.jpg");	
+	background-repeat: no-repeat;
+	}
 }
 
 
 @media screen and (max-width: 480px) { /* разрешение смартфона */
     h1 {
         min-width: 320px;
-        font-size: 16px;
+        font-size: 20px;
     }
     div.image_gallery {
         width: 320px;
@@ -45,6 +61,14 @@ img {
         height: auto;
         padding: 1%; /* небольшие оступы для изображений */
     }
+	
+	body {
+    font-family: 'Lobster', cursive;
+	background-image: url("http://siryx.ru/_ph/27/116884545.jpg");	
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+	
 }
 
 
